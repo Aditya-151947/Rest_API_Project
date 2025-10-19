@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(238, 186, 186);
+    padding: 0;
+    margin: 0;
+
+}
+h2{
+    color:maroon;
+    text-align: center;
+    margin: 10px;
+
+}
+.post{
+    background-color: rgb(193, 131, 142);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.user{
+    font-weight: bold;
+    font-style: italic;
+    color: maroon;
+
+}
+.content{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.edit,.detailview{
+    margin: 5px 5px 5px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 	255, 255);
+
+}
+
+
+.deletepost{
+    margin: 5px 5px 5px 10px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    color: maroon;
+    display: inline-block;
+    background-color: rgb(205, 119, 119);
+
+}
+
+.createbtn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-weight: bold;
+    color: maroon;
+}
