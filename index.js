@@ -31,6 +31,11 @@ let posts=[
     }
 ];
 
+app.get("/", (req, res) => {
+    res.redirect("/posts"); // or res.send("Welcome to the REST API")
+});
+
+
 app.get("/posts",(req,res)=>{
     res.render("index.ejs",{posts});
 });
@@ -74,5 +79,6 @@ app.delete("/posts/:id",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log("server is running on port 8080");
+    console.log(`🚀 Server is running at http://localhost:${port}`);
+
 });
