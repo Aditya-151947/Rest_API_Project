@@ -32,7 +32,7 @@ let posts=[
 ];
 
 app.get("/", (req, res) => {
-    res.redirect("/posts"); // or res.send("Welcome to the REST API")
+    res.render("home");
 });
 
 

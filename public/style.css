@@ -1,71 +1,175 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(238, 186, 186);
-    padding: 0;
-    margin: 0;
-
-}
-h2{
-    color:maroon;
-    text-align: center;
-    margin: 10px;
-
-}
-.post{
-    background-color: rgb(193, 131, 142);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.user{
-    font-weight: bold;
-    font-style: italic;
-    color: maroon;
-
-}
-.content{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+/* edit */
+/* Centering and layout */
+.edit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.edit,.detailview{
-    margin: 5px 5px 5px 10px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgb(255, 	255, 255);
-
+.edit-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  font-family: Arial, sans-serif;
 }
 
-
-.deletepost{
-    margin: 5px 5px 5px 10px;
-    padding: 4px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    color: maroon;
-    display: inline-block;
-    background-color: rgb(205, 119, 119);
-
+/* Typography */
+.edit-box h2 {
+  text-align: center;
+  color: maroon;
+  margin-bottom: 1rem;
 }
 
-.createbtn{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    text-decoration: none;
-    font-weight: bold;
-    color: maroon;
+.edit-box p {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Form fields */
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #a00000;
+}
+/* style.css     */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Page Title */
+h2 {
+  color: #800000; /* Maroon */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Post Container */
+.post {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Username */
+.user {
+  font-weight: bold;
+  font-style: italic;
+  color: #800000;
+  font-size: 1.1rem;
+}
+
+/* Post Content */
+.content {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+
+/* Action Buttons */
+.edit, .detailview, .deletepost, .createbtn {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific Button Styles */
+.edit, .detailview {
+  background-color: #ffffff;
+  color: #800000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.deletepost {
+  background-color: #cd7777;
+  color: white;
+}
+
+.createbtn {
+  background-color: #ffffff;
+  color: #800000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* public/styles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.center-box {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
