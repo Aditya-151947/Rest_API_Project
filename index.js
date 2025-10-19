@@ -78,7 +78,7 @@ app.delete("/posts/:id",(req,res)=>{
     res.redirect("/posts");
 })
 
-app.listen(port,()=>{
-    console.log(`🚀 Server is running at http://localhost:${port}`);
-
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
+
